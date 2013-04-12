@@ -21,11 +21,10 @@ emitter.add('localhost', 7400);
 
 emitter.emit('/foo', 1, 2, 3);
 emitter.emit('/bar', 'hello', 'world');
-
 ```
 
 ## License
 
 The MIT License
 
-Copyright (c) 2013 Circuit Lab. <info@uniba.jp>
+Copyright (c) 2013 Circuit Lab. &lt;info@uniba.jp&gt;
