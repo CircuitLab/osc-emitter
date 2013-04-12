@@ -1,7 +1,7 @@
 {
   "name": "osc-emitter",
   "version": "0.0.0",
-  "description": "A tiny osc emitter.",
+  "description": "A tiny OSC message emitter.",
   "keywords": ["osc"],
   "contributors": [
     { "name": "Seiya Konno", "email": "nulltask@gmail.com" }
