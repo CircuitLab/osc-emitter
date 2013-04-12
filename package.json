@@ -1,0 +1,16 @@
+{
+  "name": "osc-emitter",
+  "version": "0.0.0",
+  "description": "A tiny osc emitter.",
+  "keywords": ["osc"],
+  "contributors": [
+    { "name": "Seiya Konno", "email": "nulltask@gmail.com" }
+  ],
+  "dependencies": {
+    "osc-min": "~0.0.9"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  }
+}
