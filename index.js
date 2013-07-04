@@ -7,7 +7,6 @@ var dgram = require('dgram')
   , osc = require('osc-min')
   , EventEmitter = require('events').EventEmitter;
 
-
 /**
  * Expose `OscEmitter`.
  */
@@ -79,7 +78,7 @@ OscEmitter.prototype.add = function(host, port) {
 
 OscEmitter.prototype.remove = function(host, port) {
   this._receivers = this._receivers.filter(function(receiver) {
-    return (receiver.host !== host && receiver.port !== port);
+    return !(receiver.host === host && receiver.port === port);
   });
   return this;
 };
