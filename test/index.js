@@ -1,5 +1,5 @@
 
-var assert = require('assert');
+var assert = require('better-assert');
 var dgram = require('dgram');
 var osc = require('osc-min');
 var sock = dgram.createSocket('udp4');
