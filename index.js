@@ -35,10 +35,10 @@ OscEmitter.prototype.__proto__ = EventEmitter.prototype;
 var emit = EventEmitter.prototype.emit;
 
 /**
- * Emit OSC message.
+ * Emit a OSC message.
  *
- * @param [String] address
- * @param [Mixed] argument
+ * @param {String} address
+ * @param {Mixed} argument
  */
 
 OscEmitter.prototype.emit = function() {
@@ -57,10 +57,10 @@ OscEmitter.prototype.emit = function() {
 };
 
 /**
- * Add receiver.
+ * Add a receiver.
  *
- * @param [String] host
- * @param [Number] port
+ * @param {String} host
+ * @param {Number} port
  */
 
 OscEmitter.prototype.add = function(host, port) {
@@ -70,10 +70,10 @@ OscEmitter.prototype.add = function(host, port) {
 };
 
 /**
- * Remove receiver.
+ * Remove a receiver.
  *
- * @param [String] host
- * @param [Number] port
+ * @param {String} host
+ * @param {Number} port
  */
 
 OscEmitter.prototype.remove = function(host, port) {
