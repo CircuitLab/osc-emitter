@@ -1,6 +1,8 @@
 
 # osc-emitter
 
+[![Build Status](https://travis-ci.org/CircuitLab/osc-emitter.svg?branch=master)](https://travis-ci.org/CircuitLab/osc-emitter)
+
 A tiny OSC message emitter.
 
 ## Installation
