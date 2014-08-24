@@ -6,6 +6,9 @@
   "contributors": [
     { "name": "Seiya Konno", "email": "nulltask@gmail.com" }
   ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "dependencies": {
     "osc-min": "~0.0.9"
   },
