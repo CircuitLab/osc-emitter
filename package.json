@@ -1,6 +1,6 @@
 {
   "name": "osc-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny OSC message emitter.",
   "keywords": ["osc"],
   "contributors": [
@@ -10,7 +10,7 @@
     "test": "./node_modules/.bin/mocha"
   },
   "dependencies": {
-    "osc-min": "~0.0.9"
+    "osc-min": "~0.2.0"
   },
   "devDependencies": {
     "mocha": "*",
