@@ -48,7 +48,7 @@ OscEmitter.prototype.emit = function() {
   }
   var socket = this._socket;
   var args = Array.prototype.slice.call(arguments);
-  var message = osc.toBuffer({ address: args.shift(), args: args });
+  var message = osc.toBuffer({ address: args[0], args: args.slice(1) });
 
   this._receivers.forEach(function(receiver) {
     debug('send %j to %s:%s', args, receiver.host, receiver.port);
