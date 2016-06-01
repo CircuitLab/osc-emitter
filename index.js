@@ -3,7 +3,8 @@
  * Module dependencies.
  */
 
-var dgram = require('dgram')
+var debug = require('debug')('osc-emitter')
+  , dgram = require('dgram')
   , osc = require('osc-min')
   , EventEmitter = require('events').EventEmitter;
 
@@ -48,11 +49,12 @@ OscEmitter.prototype.emit = function() {
   var socket = this._socket;
   var args = Array.prototype.slice.call(arguments);
   var message = osc.toBuffer({ address: args.shift(), args: args });
-  
+
   this._receivers.forEach(function(receiver) {
+    debug('send %j to %s:%s', args, receiver.host, receiver.port);
     socket.send(message, 0, message.length, receiver.port, receiver.host);
   });
-  
+
   return this;
 };
 
